@@ -6,13 +6,13 @@ import com.snappydb.DB;
 import com.snappydb.DBFactory;
 import com.snappydb.SnappydbException;
 
-import org.pivxj.core.Block;
-import org.pivxj.core.Context;
-import org.pivxj.core.NetworkParameters;
-import org.pivxj.core.Sha256Hash;
-import org.pivxj.core.StoredBlock;
-import org.pivxj.store.BlockStore;
-import org.pivxj.store.BlockStoreException;
+import org.nefj.core.Block;
+import org.nefj.core.Context;
+import org.nefj.core.NetworkParameters;
+import org.nefj.core.Sha256Hash;
+import org.nefj.core.StoredBlock;
+import org.nefj.store.BlockStore;
+import org.nefj.store.BlockStoreException;
 
 import java.io.File;
 import java.io.IOException;

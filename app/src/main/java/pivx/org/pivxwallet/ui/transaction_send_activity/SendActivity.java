@@ -26,15 +26,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
-import org.pivxj.core.Address;
-import org.pivxj.core.Coin;
-import org.pivxj.core.InsufficientMoneyException;
-import org.pivxj.core.NetworkParameters;
-import org.pivxj.core.Transaction;
-import org.pivxj.core.TransactionInput;
-import org.pivxj.core.TransactionOutput;
-import org.pivxj.uri.PivxURI;
-import org.pivxj.wallet.Wallet;
+import org.nefj.core.Address;
+import org.nefj.core.Coin;
+import org.nefj.core.InsufficientMoneyException;
+import org.nefj.core.NetworkParameters;
+import org.nefj.core.Transaction;
+import org.nefj.core.TransactionInput;
+import org.nefj.core.TransactionOutput;
+import org.nefj.uri.NefURI;
+import org.nefj.wallet.Wallet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -483,7 +483,7 @@ public class SendActivity extends BaseActivity implements View.OnClickListener {
                     if (pivxModule.chechAddress(address)){
                         usedAddress = address;
                     }else {
-                        PivxURI pivxUri = new PivxURI(address);
+                        NefURI pivxUri = new NefURI(address);
                         usedAddress = pivxUri.getAddress().toBase58();
                     }
                     final String tempPubKey = usedAddress;

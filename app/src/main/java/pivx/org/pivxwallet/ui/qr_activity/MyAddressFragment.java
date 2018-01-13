@@ -19,8 +19,8 @@ import android.widget.Toast;
 
 import com.google.zxing.WriterException;
 
-import org.pivxj.core.Address;
-import org.pivxj.uri.PivxURI;
+import org.nefj.core.Address;
+import org.nefj.uri.NefURI;
 
 import pivx.org.pivxwallet.PivxApplication;
 import pivx.org.pivxwallet.R;
@@ -80,7 +80,7 @@ public class MyAddressFragment extends Fragment implements View.OnClickListener 
                 flag = true;
             }
             if (flag) {
-                String pivxUri = PivxURI.convertToBitcoinURI(address,null,"Receive address",null);
+                String pivxUri = NefURI.convertToBitcoinURI(address,null,"Receive address",null);
                 loadAddress(pivxUri,address.toBase58());
             }
         }catch (WriterException e){

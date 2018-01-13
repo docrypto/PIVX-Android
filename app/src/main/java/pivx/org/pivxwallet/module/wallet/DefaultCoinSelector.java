@@ -1,13 +1,13 @@
 package pivx.org.pivxwallet.module.wallet;
 
-import org.pivxj.core.Coin;
-import org.pivxj.core.NetworkParameters;
-import org.pivxj.core.Sha256Hash;
-import org.pivxj.core.Transaction;
-import org.pivxj.core.TransactionConfidence;
-import org.pivxj.core.TransactionOutput;
-import org.pivxj.wallet.CoinSelection;
-import org.pivxj.wallet.CoinSelector;
+import org.nefj.core.Coin;
+import org.nefj.core.NetworkParameters;
+import org.nefj.core.Sha256Hash;
+import org.nefj.core.Transaction;
+import org.nefj.core.TransactionConfidence;
+import org.nefj.core.TransactionOutput;
+import org.nefj.wallet.CoinSelection;
+import org.nefj.wallet.CoinSelector;
 
 import java.math.BigInteger;
 import java.util.ArrayList;

@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import org.pivxj.wallet.DeterministicKeyChain;
+import org.nefj.wallet.DeterministicKeyChain;
 
 import java.io.IOException;
 
@@ -64,7 +64,7 @@ public class SettingsWatchOnly extends BaseActivity {
             try {
                 pivxModule.watchOnlyMode(
                         xpub,
-                        isBip32 ? DeterministicKeyChain.KeyChainType.BIP32: DeterministicKeyChain.KeyChainType.BIP44_PIVX_ONLY
+                        isBip32 ? DeterministicKeyChain.KeyChainType.BIP32: DeterministicKeyChain.KeyChainType.BIP44_NEF_ONLY
                 );
                 SimpleTextDialog simpleTextDialog = DialogsUtil.buildSimpleTextDialog(
                         this,

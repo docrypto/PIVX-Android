@@ -2,8 +2,8 @@ package pivx.org.pivxwallet.module;
 
 import android.content.SharedPreferences;
 
-import org.pivxj.core.Context;
-import org.pivxj.core.NetworkParameters;
+import org.nefj.core.Context;
+import org.nefj.core.NetworkParameters;
 
 import global.WalletConfiguration;
 import pivx.org.pivxwallet.utils.Configurations;

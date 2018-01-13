@@ -66,7 +66,7 @@ public class SettingsBackupActivity extends BaseActivity {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                org.pivxj.core.Context.propagate(PivxContext.CONTEXT);
+                org.nefj.core.Context.propagate(PivxContext.CONTEXT);
                 backup();
                 runOnUiThread(new Runnable() {
                     @Override

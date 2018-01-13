@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 import com.google.common.collect.Lists;
 
-import org.pivxj.crypto.MnemonicException;
+import org.nefj.crypto.MnemonicException;
 
 import java.io.IOException;
 import java.util.List;

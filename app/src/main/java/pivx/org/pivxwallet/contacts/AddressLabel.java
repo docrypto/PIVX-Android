@@ -1,6 +1,6 @@
 package pivx.org.pivxwallet.contacts;
 
-import org.pivxj.core.Sha256Hash;
+import org.nefj.core.Sha256Hash;
 
 import java.io.Serializable;
 import java.util.ArrayList;

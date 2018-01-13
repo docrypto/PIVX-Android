@@ -1,7 +1,7 @@
 package pivx.org.pivxwallet.ui.transaction_send_activity.custom.inputs;
 
-import org.pivxj.core.Sha256Hash;
-import org.pivxj.core.TransactionOutput;
+import org.nefj.core.Sha256Hash;
+import org.nefj.core.TransactionOutput;
 
 import java.io.Serializable;
 

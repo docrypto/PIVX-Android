@@ -1,17 +1,17 @@
 package pivx.org.pivxwallet.module;
 
-import org.pivxj.core.Address;
-import org.pivxj.core.Coin;
-import org.pivxj.core.InsufficientMoneyException;
-import org.pivxj.core.Peer;
-import org.pivxj.core.Sha256Hash;
-import org.pivxj.core.Transaction;
-import org.pivxj.core.TransactionInput;
-import org.pivxj.core.TransactionOutput;
-import org.pivxj.crypto.DeterministicKey;
-import org.pivxj.crypto.MnemonicException;
-import org.pivxj.wallet.DeterministicKeyChain;
-import org.pivxj.wallet.Wallet;
+import org.nefj.core.Address;
+import org.nefj.core.Coin;
+import org.nefj.core.InsufficientMoneyException;
+import org.nefj.core.Peer;
+import org.nefj.core.Sha256Hash;
+import org.nefj.core.Transaction;
+import org.nefj.core.TransactionInput;
+import org.nefj.core.TransactionOutput;
+import org.nefj.crypto.DeterministicKey;
+import org.nefj.crypto.MnemonicException;
+import org.nefj.wallet.DeterministicKeyChain;
+import org.nefj.wallet.Wallet;
 
 import java.io.File;
 import java.io.IOException;

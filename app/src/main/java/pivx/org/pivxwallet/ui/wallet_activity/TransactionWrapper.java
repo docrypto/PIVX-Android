@@ -1,8 +1,8 @@
 package pivx.org.pivxwallet.ui.wallet_activity;
 
-import org.pivxj.core.Coin;
-import org.pivxj.core.Sha256Hash;
-import org.pivxj.core.Transaction;
+import org.nefj.core.Coin;
+import org.nefj.core.Sha256Hash;
+import org.nefj.core.Transaction;
 
 import java.io.Serializable;
 import java.util.Map;

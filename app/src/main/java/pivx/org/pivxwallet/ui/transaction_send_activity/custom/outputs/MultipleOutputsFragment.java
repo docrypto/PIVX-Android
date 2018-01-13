@@ -12,8 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import org.pivxj.core.Coin;
-import org.pivxj.uri.PivxURI;
+import org.nefj.core.Coin;
+import org.nefj.uri.NefURI;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -281,7 +281,7 @@ public class MultipleOutputsFragment extends BaseRecyclerFragment<OutputWrapper>
                     if (pivxModule.chechAddress(address)){
                         usedAddress = address;
                     }else {
-                        PivxURI pivxUri = new PivxURI(address);
+                        NefURI pivxUri = new NefURI(address);
                         usedAddress = pivxUri.getAddress().toBase58();
                     }
                     final String tempPubKey = usedAddress;

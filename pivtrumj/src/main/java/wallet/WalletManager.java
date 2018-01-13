@@ -2,30 +2,30 @@ package wallet;
 
 import com.google.common.base.Charsets;
 
-import org.pivxj.core.Address;
-import org.pivxj.core.BlockChain;
-import org.pivxj.core.Coin;
-import org.pivxj.core.InsufficientMoneyException;
-import org.pivxj.core.PeerGroup;
-import org.pivxj.core.Sha256Hash;
-import org.pivxj.core.Transaction;
-import org.pivxj.core.TransactionInput;
-import org.pivxj.core.TransactionOutput;
-import org.pivxj.core.Utils;
-import org.pivxj.core.listeners.TransactionConfidenceEventListener;
-import org.pivxj.crypto.DeterministicKey;
-import org.pivxj.crypto.LinuxSecureRandom;
-import org.pivxj.crypto.MnemonicCode;
-import org.pivxj.crypto.MnemonicException;
-import org.pivxj.wallet.DeterministicKeyChain;
-import org.pivxj.wallet.DeterministicSeed;
-import org.pivxj.wallet.Protos;
-import org.pivxj.wallet.SendRequest;
-import org.pivxj.wallet.UnreadableWalletException;
-import org.pivxj.wallet.Wallet;
-import org.pivxj.wallet.WalletFiles;
-import org.pivxj.wallet.WalletProtobufSerializer;
-import org.pivxj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.nefj.core.Address;
+import org.nefj.core.BlockChain;
+import org.nefj.core.Coin;
+import org.nefj.core.InsufficientMoneyException;
+import org.nefj.core.PeerGroup;
+import org.nefj.core.Sha256Hash;
+import org.nefj.core.Transaction;
+import org.nefj.core.TransactionInput;
+import org.nefj.core.TransactionOutput;
+import org.nefj.core.Utils;
+import org.nefj.core.listeners.TransactionConfidenceEventListener;
+import org.nefj.crypto.DeterministicKey;
+import org.nefj.crypto.LinuxSecureRandom;
+import org.nefj.crypto.MnemonicCode;
+import org.nefj.crypto.MnemonicException;
+import org.nefj.wallet.DeterministicKeyChain;
+import org.nefj.wallet.DeterministicSeed;
+import org.nefj.wallet.Protos;
+import org.nefj.wallet.SendRequest;
+import org.nefj.wallet.UnreadableWalletException;
+import org.nefj.wallet.Wallet;
+import org.nefj.wallet.WalletFiles;
+import org.nefj.wallet.WalletProtobufSerializer;
+import org.nefj.wallet.listeners.WalletCoinsReceivedEventListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -188,7 +188,7 @@ public class WalletManager {
         wallet.addCoinsReceivedEventListener(new WalletCoinsReceivedEventListener() {
             @Override
             public void onCoinsReceived(Wallet wallet, Transaction transaction, Coin coin, Coin coin1) {
-                org.pivxj.core.Context.propagate(conf.getWalletContext());
+                org.nefj.core.Context.propagate(conf.getWalletContext());
                 saveWallet();
             }
         });
@@ -200,7 +200,7 @@ public class WalletManager {
         }
         List<String> words = generateMnemonic(SEED_ENTROPY_EXTRA);
         DeterministicSeed seed = new DeterministicSeed(words, null, "", System.currentTimeMillis());
-        return Wallet.fromSeed(conf.getNetworkParams(), seed, DeterministicKeyChain.KeyChainType.BIP44_PIVX_ONLY);
+        return Wallet.fromSeed(conf.getNetworkParams(), seed, DeterministicKeyChain.KeyChainType.BIP44_NEF_ONLY);
     }
 
     public static List<String> generateMnemonic(int entropyBitsSize){
@@ -280,7 +280,7 @@ public class WalletManager {
         wallet = Wallet.fromSeed(
                 conf.getNetworkParams(),
                 new DeterministicSeed(mnemonic,null,"",timestamp),
-                bip44? DeterministicKeyChain.KeyChainType.BIP44_PIVX_ONLY: DeterministicKeyChain.KeyChainType.BIP32
+                bip44? DeterministicKeyChain.KeyChainType.BIP44_NEF_ONLY: DeterministicKeyChain.KeyChainType.BIP32
         );
         restoreWallet(wallet);
     }

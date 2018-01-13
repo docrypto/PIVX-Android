@@ -20,11 +20,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.pivxj.core.Coin;
-import org.pivxj.core.InsufficientMoneyException;
-import org.pivxj.core.Transaction;
-import org.pivxj.uri.PivxURI;
-import org.pivxj.wallet.Wallet;
+import org.nefj.core.Coin;
+import org.nefj.core.InsufficientMoneyException;
+import org.nefj.core.Transaction;
+import org.nefj.uri.NefURI;
+import org.nefj.wallet.Wallet;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -276,7 +276,7 @@ public class WalletActivity extends BaseDrawerActivity {
                     if (pivxModule.chechAddress(address)){
                         usedAddress = address;
                     }else {
-                        PivxURI pivxUri = new PivxURI(address);
+                        NefURI pivxUri = new NefURI(address);
                         usedAddress = pivxUri.getAddress().toBase58();
                     }
                     DialogsUtil.showCreateAddressLabelDialog(this,usedAddress);
