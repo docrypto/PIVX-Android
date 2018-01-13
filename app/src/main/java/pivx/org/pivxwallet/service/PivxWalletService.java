@@ -264,7 +264,7 @@ public class PivxWalletService extends Service{
                     resultIntent.setAction(ACTION_CANCEL_COINS_RECEIVED);
                     deleteIntent = PendingIntent.getService(PivxWalletService.this, 0, resultIntent, PendingIntent.FLAG_CANCEL_CURRENT);
                     mBuilder = new NotificationCompat.Builder(getApplicationContext())
-                            .setContentTitle("Pivs received!")
+                            .setContentTitle("NEF received!")
                             .setContentText("Coins received for a value of " + notificationAccumulatedAmount.toFriendlyString())
                             .setAutoCancel(true)
                             .setSmallIcon(R.mipmap.ic_launcher)

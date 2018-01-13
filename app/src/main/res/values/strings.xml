@@ -23,7 +23,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="set_amount">Write amount to send</string>
-    <string name="set_amount_piv">PIV</string>
+    <string name="set_amount_piv">NEF</string>
     <string name="set_amount_usd">USD</string>
     <string name="add_all">ADD ALL</string>
     <string name="title_amount">Amount</string>
@@ -115,7 +115,7 @@
     <string name="restore">Restore</string>
     <string name="start">Start</string>
     <string name="title_slide1">NEF is secure</string>
-    <string name="desc_slide1">First coin with BIP38 Encryption and Decryption of Private Keys</string>
+    <string name="desc_slide1">Utilises BIP38 Encryption and Decryption of Private Keys</string>
     <string name="title_slide2">60 SECOND BLOCK TIME</string>
     <string name="desc_slide2">Already very fast, NEF transactions using SwiftX are instant with ZERO confirmation wait time required.</string>
     <string name="title_slide3">Extremely secure and private</string>
@@ -198,7 +198,7 @@
     <string name="per_kilobyte">Per kilobyte</string>
     <string name="total_at_least">Total at least</string>
     <string name="fee">Fee</string>
-    <string name="minimum_fee">Pay only the minimum fee of 0.00010000 Piv/kB</string>
+    <string name="minimum_fee">Pay only the minimum fee of 0.00010000 NEF/kB</string>
     <string name="several_outputs_add_address">ADD ADDRESS</string>
     <string name="address_num">Address %d </string>
     <string name="invalid_last_amount">Invalid last address amount</string>
@@ -223,8 +223,8 @@
     <string name="not_connection">No connection</string>
     <string name="confimations">Confirmations</string>
     <string name="multiple_address_send">Sending to %d addresses</string>
-    <string name="fee_per_kb">%s Piv/kB</string>
-    <string name="fee_explanation">If the custom fee is lower than the minimum fee (0.0001 PIV/kB) the cost will be the minimum and not the custom fee selected.\n Fee calculated per kilobyte.</string>
+    <string name="fee_per_kb">%s NEF/kB</string>
+    <string name="fee_explanation">If the custom fee is lower than the minimum fee (0.0001 NEF/kB) the cost will be the minimum and not the custom fee selected.\n Fee calculated per kilobyte.</string>
     <string name="invalid_fee_amount">Invalid fee amount</string>
     <string name="load_inputs_fail">Coin control fail</string>
     <string name="title_tx_weight">Weight</string>
@@ -248,7 +248,7 @@
     <string name="validate_multi_send_enabled">Blocked action, multi send enabled</string>
     <string name="detail_no_available_inputs">No available inputs information</string>
     <string name="report_crash_title">Report crash</string>
-    <string name="crash_toast_text">Pivx wallet crash</string>
+    <string name="crash_toast_text">NEF wallet crash</string>
     <string name="backup_fail">Backup fail</string>
     <string name="no_peer_connection">No connection to the node</string>
     <string name="wallet_is_not_sync">Wallet is not sync, to be sure about your real balance please wait until the synchronization finish</string>
