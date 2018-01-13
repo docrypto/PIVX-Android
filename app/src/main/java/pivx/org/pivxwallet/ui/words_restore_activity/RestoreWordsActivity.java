@@ -31,7 +31,7 @@ import pivx.org.pivxwallet.ui.wallet_activity.WalletActivity;
 import pivx.org.pivxwallet.utils.CrashReporter;
 import pivx.org.pivxwallet.utils.DialogsUtil;
 
-import static pivx.org.pivxwallet.module.PivxContext.PIVX_WALLET_APP_RELEASED_ON_PLAY_STORE_TIME;
+import static pivx.org.pivxwallet.module.PivxContext.NEF_WALLET_APP_RELEASED_ON_PLAY_STORE_TIME;
 
 /**
  * Created by Neoperol on 7/19/17.
@@ -166,7 +166,7 @@ public class RestoreWordsActivity extends BaseActivity {
 
                                     boolean isBip32 = check_bip32.isChecked();
 
-                                    pivxModule.restoreWallet(mnemonic, PIVX_WALLET_APP_RELEASED_ON_PLAY_STORE_TIME,!isBip32);
+                                    pivxModule.restoreWallet(mnemonic, NEF_WALLET_APP_RELEASED_ON_PLAY_STORE_TIME,!isBip32);
 
                                     Toast.makeText(RestoreWordsActivity.this, R.string.restore_mnemonic, Toast.LENGTH_LONG).show();
 

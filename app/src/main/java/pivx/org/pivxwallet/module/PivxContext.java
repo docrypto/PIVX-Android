@@ -27,7 +27,7 @@ public class PivxContext {
     public static final String ENABLE_BIP44_APP_VERSION = "1.03";
 
     /** Pivx wallet released time */
-    public static final long PIVX_WALLET_APP_RELEASED_ON_PLAY_STORE_TIME = 1500940800;
+    public static final long NEF_WALLET_APP_RELEASED_ON_PLAY_STORE_TIME = 1500940800;
 
     // report mail
     public static final String REPORT_EMAIL = "matiasfurszyfer@gmail.com";

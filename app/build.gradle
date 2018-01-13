@@ -5,11 +5,11 @@ android {
     buildToolsVersion '25.0.2'
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
-        applicationId "pivx.tech.furszy"
+        applicationId "nef.tech.furszy"
         minSdkVersion 21
         targetSdkVersion 25
-        versionCode 16
-        versionName "2.0.1"
+        versionCode 17
+        versionName "2.0.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
 
