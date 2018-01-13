@@ -1,5 +1,7 @@
 package global;
 
+import org.nefj.core.CoinDefinition;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,9 +19,9 @@ public class PivtrumGlobalData {
 
     public static final List<PivtrumPeerData> listTrustedHosts(){
         List<PivtrumPeerData> list = new ArrayList<>();
-        list.add(new PivtrumPeerData(FURSZY_TESTNET_SERVER,8443,55552));
+        list.add(new PivtrumPeerData(FURSZY_TESTNET_SERVER,CoinDefinition.TestPort,55552));
         for (String trustedNode : TRUSTED_NODES) {
-            list.add(new PivtrumPeerData(trustedNode,51472,55552));
+            list.add(new PivtrumPeerData(trustedNode, CoinDefinition.Port,55552));
         }
         return list;
     }
